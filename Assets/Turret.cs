@@ -12,6 +12,11 @@ public class Turret : MonoBehaviour
 
     public Transform toRotate;
     public float turnSpeed = 10f;
+
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -59,9 +64,22 @@ public class Turret : MonoBehaviour
 
         toRotate.rotation = Quaternion.Euler(0f, rotation.y, 0f);
 
+        if(fireCountdown<=0f)
+        {
+            Shoot();
+            fireCountdown = 1f / fireRate;
+        }
 
+        fireCountdown -= Time.deltaTime;
         
     }
+
+    void Shoot()
+    {
+        Debug.Log("Shoot");
+
+    }
+
 
     private void OnDrawGizmosSelected()
     {
