@@ -38,7 +38,6 @@ public class Turret : MonoBehaviour
         if (nearestEnemy != null && shortestDistance <= range)
         {
             target = nearestEnemy.transform;
-            Debug.Log("ho");
         }
         else
         {
