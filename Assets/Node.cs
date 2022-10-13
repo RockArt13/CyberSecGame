@@ -4,6 +4,10 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public Color hoverColor;
+    public Vector3 positionOffset;
+
+    private GameObject turret;
+
     private Color startColor;
 
     private Renderer rend;
@@ -12,6 +16,17 @@ public class Node : MonoBehaviour
     {
         rend = GetComponent<Renderer>();
         startColor = rend.material.color;
+    }
+
+    private void OnMouseDown()
+    {
+        if(turret != null)
+        {
+            Debug.Log("This place is occupied!");
+            return;
+        }
+        GameObject turretToBuild = BuildManager.instance.GetTurretToBuild();
+        turret = (GameObject)Instantiate(turretToBuild, transform.position + positionOffset, transform.rotation);
     }
     private void OnMouseEnter()
     {
