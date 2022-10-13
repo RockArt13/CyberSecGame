@@ -19,6 +19,9 @@ public class Turret : MonoBehaviour
     public Transform toRotate;
     public float turnSpeed = 10f;
 
+    public GameObject bulletPrefab;
+    public Transform firePoint;
+
    
 
 
@@ -81,8 +84,11 @@ public class Turret : MonoBehaviour
 
     void Shoot()
     {
-        Debug.Log("Shoot");
+        GameObject bulletObject = (GameObject)Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        Bullet bullet = bulletObject.GetComponent<Bullet>();
 
+        if (bullet != null)
+            bullet.Seek(target);
     }
 
 
