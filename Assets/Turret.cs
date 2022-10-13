@@ -6,15 +6,20 @@ public class Turret : MonoBehaviour
 {
 
     private Transform target;
-    public float range = 15f;
 
+    [Header("Atributes")]
+
+    public float range = 15f;
+    public float fireRate = 1f;
+    private float fireCountdown = 0f;
+
+    [Header("Unity UI Setup")]
     public string enemyTag = "Enemy";
 
     public Transform toRotate;
     public float turnSpeed = 10f;
 
-    public float fireRate = 1f;
-    private float fireCountdown = 0f;
+   
 
 
     // Start is called before the first frame update
