@@ -12,7 +12,7 @@ public class CameraView : MonoBehaviour
     public float maxY = 80f;
 
 
-    public float minZ = -70f;
+    public float minZ = -99f;
     public float maxZ = -10f;
 
     public float minX = 20f;
