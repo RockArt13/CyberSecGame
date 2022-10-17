@@ -4,17 +4,36 @@ using UnityEngine;
 
 public class CameraView : MonoBehaviour
 {
-
+    private bool doMove = true;
     public float panSpeed = 30f;
-    public float panBorderThickness;
+    public float panBorderThickness = 10f;
+    public float scrollSpeed = 5f;
+    public float minY = 10f;
+    public float maxY = 80f;
+
+
+    public float minZ = -70f;
+    public float maxZ = -10f;
+
+    public float minX = 20f;
+    public float maxX = 60f;
 
     // Update is called once per frame
     void Update()
     {
+        
+        if (Input.GetKeyDown(KeyCode.Escape))
+            doMove = !doMove;
+
+        if (!doMove)
+            return;
+        
+
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
         {
             transform.Translate(Vector3.forward * panSpeed * Time.deltaTime, Space.World);
         }
+         
         if (Input.GetKey("s") || Input.mousePosition.y <= panBorderThickness)
         {
             transform.Translate(Vector3.back * panSpeed * Time.deltaTime, Space.World);
@@ -27,5 +46,20 @@ public class CameraView : MonoBehaviour
         {
             transform.Translate(Vector3.left * panSpeed * Time.deltaTime, Space.World);
         }
+
+        float scroll = Input.GetAxisRaw("Mouse ScrollWheel");
+
+        Vector3 pos = transform.position;
+
+        pos.y -= scroll * 1000 * scrollSpeed*Time.deltaTime;
+        pos.y = Mathf.Clamp(pos.y, minY, maxY);
+
+        pos.x = Mathf.Clamp(pos.x, minX, maxX);
+        pos.z = Mathf.Clamp(pos.z, minZ, maxZ);
+
+        transform.position = pos;
+
+
+        
     }
 }
