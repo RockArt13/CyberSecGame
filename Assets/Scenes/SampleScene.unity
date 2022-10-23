@@ -8948,6 +8948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 6501878085074008244, guid: 9c8ed62ef66aa4dd1a42064d76ca6919, type: 3}
+  superTurretPrefab: {fileID: 6501878085074008244, guid: 15097ad5bc51f493c92e08e70c829c5b, type: 3}
 --- !u!1001 &1092690936
 PrefabInstance:
   m_ObjectHideFlags: 0
