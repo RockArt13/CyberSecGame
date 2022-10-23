@@ -10,7 +10,7 @@ public class BuildManager : MonoBehaviour
     {
         if(instance != null)
         {
-            Debug.LogError("Noyt singleton anymore");
+            Debug.LogError("Not singleton anymore");
             return;
         }
         instance = this;
