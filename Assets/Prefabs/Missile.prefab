@@ -47,7 +47,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   explosionRadius: 6
-  bulletEffect: {fileID: 1527290052941014113, guid: 0ec42487d8ac04b28ab2cd9bde6ce856, type: 3}
+  bulletEffect: {fileID: 1527290052941014113, guid: 80401ed3e389c406886f5e426afaee87, type: 3}
 --- !u!1 &8352929252890995652
 GameObject:
   m_ObjectHideFlags: 0
