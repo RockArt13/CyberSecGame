@@ -8897,6 +8897,7 @@ GameObject:
   - component: {fileID: 1087897878}
   - component: {fileID: 1087897877}
   - component: {fileID: 1087897879}
+  - component: {fileID: 1087897880}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -8949,6 +8950,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   standardTurretPrefab: {fileID: 6501878085074008244, guid: 9c8ed62ef66aa4dd1a42064d76ca6919, type: 3}
   missileLauncherPrefab: {fileID: 6881364286974508140, guid: 6e7663d080b194517afdd54d4f46ba96, type: 3}
+--- !u!114 &1087897880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1087897876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b26c97d11f4f4644b926e4d08db3511, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1092690936
 PrefabInstance:
   m_ObjectHideFlags: 0
