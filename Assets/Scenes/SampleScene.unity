@@ -9609,7 +9609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2455723513514419485, guid: 6eea4e7aaa9274d5b9ebf9ae0b84a912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchasedMissileLauncher
+      value: SelectMissileLauncher
       objectReference: {fileID: 0}
     - target: {fileID: 2455723513514419485, guid: 6eea4e7aaa9274d5b9ebf9ae0b84a912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -17360,7 +17360,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2455723513514419485, guid: 6eea4e7aaa9274d5b9ebf9ae0b84a912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PurchasedSimpleTurret
+      value: SelectStandardTurret
       objectReference: {fileID: 0}
     - target: {fileID: 2455723513514419485, guid: 6eea4e7aaa9274d5b9ebf9ae0b84a912, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
