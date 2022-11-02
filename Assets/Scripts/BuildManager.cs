@@ -43,7 +43,7 @@ public class BuildManager : MonoBehaviour
 
         node.turret = turret;
 
-        GameObject effect = Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
+        GameObject effect = (GameObject)Instantiate(buildEffect, node.GetBuildPosition(), Quaternion.identity);
         Destroy(effect, 5.0f);
 
         Debug.Log("Turret build: Current money status: " + PlayerState.Money);
