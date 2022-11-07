@@ -10,6 +10,8 @@ public class Enemy : MonoBehaviour
 
     public int value = 50;
 
+    public GameObject deathEffect;
+
     private Transform target;
 
     private int wavepointIndex = 0;
@@ -33,6 +35,10 @@ public class Enemy : MonoBehaviour
     void Die()
     {
         PlayerState.Money += value;
+
+        GameObject effect = (GameObject)Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(effect, 5f);
+
         Destroy(gameObject);
     }
     private void Update()
