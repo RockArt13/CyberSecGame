@@ -18,6 +18,7 @@ public class Turret : MonoBehaviour
     [Header("Laser (optional)")]
     public bool hasLaser = false;
     public LineRenderer lineRenderer;
+    public ParticleSystem laserEffect;
 
     [Header("Unity UI Setup")]
     public string enemyTag = "Enemy";
@@ -74,7 +75,12 @@ public class Turret : MonoBehaviour
             if(hasLaser)
             {
                 if (lineRenderer.enabled)
+                {
                     lineRenderer.enabled = false;
+                    laserEffect.Stop();
+
+                }
+                    
             }
             return;
         }
@@ -111,10 +117,22 @@ public class Turret : MonoBehaviour
     void Laser()
     {
         if (!lineRenderer.enabled)
+        {
             lineRenderer.enabled = true;
+            laserEffect.Play();
+        }
+            
 
         lineRenderer.SetPosition(0, firePoint.position);
         lineRenderer.SetPosition(1, target.position);
+
+        Vector3 dir = firePoint.position - target.position;
+
+        laserEffect.transform.position = target.position + dir.normalized;
+
+        laserEffect.transform.rotation = Quaternion.LookRotation(dir);
+
+        
     }
 
     void Shoot()
