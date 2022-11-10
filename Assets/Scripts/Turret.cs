@@ -70,7 +70,14 @@ public class Turret : MonoBehaviour
     void Update()
     {
         if (target == null)
+        {
+            if(hasLaser)
+            {
+                if (lineRenderer.enabled)
+                    lineRenderer.enabled = false;
+            }
             return;
+        }
 
         LockOnTarget();
          if(hasLaser)
@@ -103,7 +110,11 @@ public class Turret : MonoBehaviour
 
     void Laser()
     {
-        //code here
+        if (!lineRenderer.enabled)
+            lineRenderer.enabled = true;
+
+        lineRenderer.SetPosition(0, firePoint.position);
+        lineRenderer.SetPosition(1, target.position);
     }
 
     void Shoot()
