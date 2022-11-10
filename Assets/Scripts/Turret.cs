@@ -19,6 +19,7 @@ public class Turret : MonoBehaviour
     public bool hasLaser = false;
     public LineRenderer lineRenderer;
     public ParticleSystem laserEffect;
+    public Light laserLight;
 
     [Header("Unity UI Setup")]
     public string enemyTag = "Enemy";
@@ -78,6 +79,7 @@ public class Turret : MonoBehaviour
                 {
                     lineRenderer.enabled = false;
                     laserEffect.Stop();
+                    laserLight.enabled = false;
 
                 }
                     
@@ -120,6 +122,7 @@ public class Turret : MonoBehaviour
         {
             lineRenderer.enabled = true;
             laserEffect.Play();
+            laserLight.enabled = true;
         }
             
 
