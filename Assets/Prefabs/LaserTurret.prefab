@@ -33,7 +33,7 @@ Transform:
   - {fileID: 5178189160071560216}
   - {fileID: 1600975307355436123}
   m_Father: {fileID: 9133508712511980505}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
 --- !u!1 &6612681079427711780
 GameObject:
@@ -66,7 +66,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 9133508712511980505}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &500097092550301897
 MeshFilter:
@@ -262,6 +262,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 259527873569799179}
   - {fileID: 2923614691349999381}
   - {fileID: 6287684282244363166}
   m_Father: {fileID: 0}
@@ -284,6 +285,7 @@ MonoBehaviour:
   fireRate: 1
   hasLaser: 1
   lineRenderer: {fileID: 3411684413493787075}
+  laserEffect: {fileID: 259527873569799172}
   enemyTag: Enemy
   toRotate: {fileID: 2923614691349999381}
   turnSpeed: 10
@@ -553,3 +555,70 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &9143694646610447135
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 9133508712511980505}
+    m_Modifications:
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 45.96
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 23.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9042923401822074649, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+      propertyPath: m_Name
+      value: LaserEffect
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+--- !u!198 &259527873569799172 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 9042923401822074651, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+  m_PrefabInstance: {fileID: 9143694646610447135}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &259527873569799179 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9042923401822074644, guid: 428e30e614fa441ad91a123321ac236f, type: 3}
+  m_PrefabInstance: {fileID: 9143694646610447135}
+  m_PrefabAsset: {fileID: 0}
