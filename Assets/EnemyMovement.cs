@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
             GetNextWayPoint();
         }
 
-
+        enemy.speed = enemy.startSpeed;
     }
 
     void GetNextWayPoint()
