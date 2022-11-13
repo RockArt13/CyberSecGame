@@ -10694,6 +10694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1470a3794d5f14f13a69788fcf43d937, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameOverUI: {fileID: 2022074040}
 --- !u!1001 &1092690936
 PrefabInstance:
   m_ObjectHideFlags: 0
