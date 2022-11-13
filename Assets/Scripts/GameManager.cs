@@ -5,14 +5,19 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
 
-    private bool gameEnded = false;
+    public static bool GameOver;
 
     public GameObject gameOverUI;
+
+    private void Start()
+    {
+        GameOver = false;
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (gameEnded)
+        if (GameOver)
             return;
 
         if(PlayerState.Lives<=0)
@@ -23,7 +28,7 @@ public class GameManager : MonoBehaviour
 
     void EndGame()
     {
-        gameEnded = true;
+        GameOver = true;
         gameOverUI.SetActive(true);
     }
 }
