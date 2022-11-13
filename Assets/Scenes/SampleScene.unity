@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 8749faae84f1e4c719bde775dd732214, type: 2}
   m_LightingSettings: {fileID: 0}
 --- !u!196 &4
 NavMeshSettings:
@@ -2653,6 +2653,7 @@ GameObject:
   - component: {fileID: 235492102}
   - component: {fileID: 235492101}
   - component: {fileID: 235492100}
+  - component: {fileID: 235492103}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -2775,6 +2776,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 235492098}
   m_CullTransparentMesh: 1
+--- !u!225 &235492103
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 235492098}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &244226150
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5516,6 +5529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 529133539}
+  - component: {fileID: 529133540}
   m_Layer: 5
   m_Name: SurvivedInfo
   m_TagString: Untagged
@@ -5545,6 +5559,18 @@ RectTransform:
   m_AnchoredPosition: {x: 0.0000038146973, y: 0.0000076293945}
   m_SizeDelta: {x: 515.8486, y: 251.3102}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!225 &529133540
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529133538}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &558514869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11274,6 +11300,7 @@ GameObject:
   - component: {fileID: 1170017341}
   - component: {fileID: 1170017340}
   - component: {fileID: 1170017339}
+  - component: {fileID: 1170017342}
   m_Layer: 5
   m_Name: Retry
   m_TagString: Untagged
@@ -11396,6 +11423,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1170017337}
   m_CullTransparentMesh: 1
+--- !u!225 &1170017342
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1170017337}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1173681813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13365,6 +13404,7 @@ GameObject:
   - component: {fileID: 1394277378}
   - component: {fileID: 1394277377}
   - component: {fileID: 1394277376}
+  - component: {fileID: 1394277379}
   m_Layer: 5
   m_Name: GameOverText
   m_TagString: Untagged
@@ -13504,6 +13544,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1394277374}
   m_CullTransparentMesh: 1
+--- !u!225 &1394277379
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1394277374}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1001 &1404641340
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15240,6 +15292,7 @@ GameObject:
   - component: {fileID: 1604256957}
   - component: {fileID: 1604256959}
   - component: {fileID: 1604256958}
+  - component: {fileID: 1604256960}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -15305,6 +15358,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1604256956}
   m_CullTransparentMesh: 1
+--- !u!225 &1604256960
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1604256956}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!224 &1608788298 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2455723513514419483, guid: 6eea4e7aaa9274d5b9ebf9ae0b84a912, type: 3}
@@ -18789,6 +18854,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2022074041}
   - component: {fileID: 2022074042}
+  - component: {fileID: 2022074043}
   m_Layer: 5
   m_Name: GameOverUI
   m_TagString: Untagged
@@ -18834,6 +18900,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundText: {fileID: 1474272734}
+--- !u!95 &2022074043
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2022074040}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0838c573b942a4827b1aba0d3111f399, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &2028013497
 PrefabInstance:
   m_ObjectHideFlags: 0
