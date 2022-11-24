@@ -2022,6 +2022,8 @@ GameObject:
   - component: {fileID: 172191468}
   - component: {fileID: 172191467}
   - component: {fileID: 172191466}
+  - component: {fileID: 172191470}
+  - component: {fileID: 172191469}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -2112,6 +2114,38 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!225 &172191469
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172191464}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!95 &172191470
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 172191464}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: ef7fe54d8b6804f64aa59e172055488f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &173468537
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4285,7 +4319,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c518e60fd6478474086b2b2a9a6d3190, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ui: {fileID: 362645945}
+  ui: {fileID: 172191464}
 --- !u!1001 &366272019
 PrefabInstance:
   m_ObjectHideFlags: 0
