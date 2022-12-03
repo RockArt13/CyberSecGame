@@ -12874,8 +12874,8 @@ MonoBehaviour:
   laserTurret:
     prefab: {fileID: 8469983803694520675, guid: 5dd7158e4eb7847aaaa8e36943469136, type: 3}
     cost: 299
-    upgradedPrefab: {fileID: 0}
-    upgradedCost: 0
+    upgradedPrefab: {fileID: 8469983803694520675, guid: 240d9472407cf47b7a4dd60528d8f74e, type: 3}
+    upgradedCost: 250
 --- !u!1001 &1239779480
 PrefabInstance:
   m_ObjectHideFlags: 0
