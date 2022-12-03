@@ -12869,8 +12869,8 @@ MonoBehaviour:
   missileLauncher:
     prefab: {fileID: 6881364286974508140, guid: 6e7663d080b194517afdd54d4f46ba96, type: 3}
     cost: 122
-    upgradedPrefab: {fileID: 0}
-    upgradedCost: 0
+    upgradedPrefab: {fileID: 6881364286974508140, guid: 213cfe39716054ca9839bd529c14a453, type: 3}
+    upgradedCost: 150
   laserTurret:
     prefab: {fileID: 8469983803694520675, guid: 5dd7158e4eb7847aaaa8e36943469136, type: 3}
     cost: 299
