@@ -4335,6 +4335,7 @@ MonoBehaviour:
   ui: {fileID: 172191464}
   upgradeCostText: {fileID: 225793349}
   upgradeButton: {fileID: 905262348}
+  sellAmountText: {fileID: 1201870043}
 --- !u!1001 &366272019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9037,7 +9038,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 362645947}
         m_TargetAssemblyTypeName: NodeUI, Assembly-CSharp
-        m_MethodName: Upgrade
+        m_MethodName: Sell
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -12553,7 +12554,7 @@ GameObject:
   - component: {fileID: 1201870044}
   - component: {fileID: 1201870043}
   m_Layer: 0
-  m_Name: Cost
+  m_Name: Amount
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
