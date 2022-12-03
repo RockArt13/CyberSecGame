@@ -1,10 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using TMPro;
 
 public class NodeUI : MonoBehaviour
 {
     public GameObject ui;
+
+    public TMP_Text upgradeCostText;
 
     private Node target;
 
@@ -13,6 +17,8 @@ public class NodeUI : MonoBehaviour
         this.target = _target;
 
         transform.position = target.GetBuildPosition();
+
+        upgradeCostText.text = target.turretBlueprint.upgradedCost + "eur";
 
         ui.SetActive(true);
     }
