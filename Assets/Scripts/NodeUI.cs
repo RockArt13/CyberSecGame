@@ -10,6 +10,8 @@ public class NodeUI : MonoBehaviour
 
     public TMP_Text upgradeCostText;
 
+    public Button upgradeButton;
+
     private Node target;
 
     public void SetTarget(Node _target)
@@ -18,8 +20,16 @@ public class NodeUI : MonoBehaviour
 
         transform.position = target.GetBuildPosition();
 
-        upgradeCostText.text = target.turretBlueprint.upgradedCost + "eur";
-
+        if(!target.isUpgraded)
+        { 
+            upgradeCostText.text = target.turretBlueprint.upgradedCost + "eur";
+            upgradeButton.interactable = true;
+        }
+        else
+        {
+            upgradeCostText.text = "D!";
+            upgradeButton.interactable = false;
+        }
         ui.SetActive(true);
     }
 
