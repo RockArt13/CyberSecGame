@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CameraView : MonoBehaviour
 {
-    private bool doMove = true;
     public float panSpeed = 30f;
     public float panBorderThickness = 10f;
     public float scrollSpeed = 5f;
@@ -26,11 +25,7 @@ public class CameraView : MonoBehaviour
             this.enabled = false;
             return;
         }
-        if (Input.GetKeyDown(KeyCode.Escape))
-            doMove = !doMove;
-
-        if (!doMove)
-            return;
+        
         
 
         if (Input.GetKey("w") || Input.mousePosition.y >= Screen.height - panBorderThickness)
