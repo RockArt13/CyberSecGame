@@ -11986,6 +11986,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   uiPause: {fileID: 1000694181}
+  sceneFade: {fileID: 1667472852418453544}
+  sceneName: MainMenu
 --- !u!1001 &1092690936
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21147,6 +21149,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   roundText: {fileID: 1474272734}
+  sceneFade: {fileID: 1667472852418453544}
+  sceneName: MainMenu
 --- !u!95 &2022074043
 Animator:
   serializedVersion: 4
@@ -22410,6 +22414,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e885da327c4af456aa44a50008726e69, type: 3}
+--- !u!114 &1667472852418453544 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1667472852755909696, guid: e885da327c4af456aa44a50008726e69, type: 3}
+  m_PrefabInstance: {fileID: 1667472852418453543}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 530b74c02edb14149a1abef70b0d64b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2386323604526020814
 PrefabInstance:
   m_ObjectHideFlags: 0
