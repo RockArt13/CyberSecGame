@@ -6605,6 +6605,7 @@ GameObject:
   m_Component:
   - component: {fileID: 529133539}
   - component: {fileID: 529133540}
+  - component: {fileID: 529133541}
   m_Layer: 5
   m_Name: SurvivedInfo
   m_TagString: Untagged
@@ -6646,6 +6647,22 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &529133541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 529133538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699e368f14ca34f2a857c8e45d7d69a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuSceneName: MainMenu
+  sceneFade: {fileID: 1667472852418453544}
+  nextLevel: Level02
+  levelCheckPoint: 2
 --- !u!1001 &558514869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10578,9 +10595,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 972545979}
-        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-        m_MethodName: Retry
+      - m_Target: {fileID: 972545981}
+        m_TargetAssemblyTypeName: LevelFinished, Assembly-CSharp
+        m_MethodName: Contonie
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11267,13 +11284,14 @@ GameObject:
   - component: {fileID: 972545978}
   - component: {fileID: 972545979}
   - component: {fileID: 972545980}
+  - component: {fileID: 972545981}
   m_Layer: 5
   m_Name: LevelFinished
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &972545978
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11333,6 +11351,22 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &972545981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972545977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 699e368f14ca34f2a857c8e45d7d69a5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuSceneName: MainMenu
+  sceneFade: {fileID: 1667472852418453544}
+  nextLevel: Level02
+  levelCheckPoint: 2
 --- !u!1001 &973853664
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13052,9 +13086,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameOverUI: {fileID: 2022074040}
-  nextLevel: Level02
-  levelCheckPoint: 2
-  sceneFade: {fileID: 1667472852418453544}
+  levelFinishedUI: {fileID: 972545977}
 --- !u!114 &1087897882
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15430,8 +15462,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 972545979}
-        m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
+      - m_Target: {fileID: 972545981}
+        m_TargetAssemblyTypeName: LevelFinished, Assembly-CSharp
         m_MethodName: Menu
         m_Mode: 1
         m_Arguments:
