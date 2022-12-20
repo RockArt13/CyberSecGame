@@ -1184,7 +1184,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f55ac21adf424830ab38eba2709c07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelToLoad: SampleScene
+  levelToLoad: LevelChoose
   sceneFade: {fileID: 1809719806}
 --- !u!4 &996882272
 Transform:
