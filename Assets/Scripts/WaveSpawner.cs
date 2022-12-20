@@ -16,6 +16,8 @@ public class WaveSpawner : MonoBehaviour
 
     public TMP_Text waveCountdownText;
 
+    public GameManager gameManager;
+
     private int waveIndex = 0;
 
        private void Update()
@@ -56,7 +58,7 @@ public class WaveSpawner : MonoBehaviour
 
         if(waveIndex == waves.Length)
         {
-            Debug.Log("Won!");
+            gameManager.WinLevel();
             this.enabled = false;
         }
 

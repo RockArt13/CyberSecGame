@@ -11,8 +11,11 @@ public class LevelSelect : MonoBehaviour
 
     private void Start()
     {
+        int levelCheckPoint = PlayerPrefs.GetInt("levelCheckPoint", 1);
+
         for (int i = 0; i < levelButtons.Length; i++)
         {
+            if(i+1 > levelCheckPoint)
             levelButtons[i].interactable = false;
         }
     }

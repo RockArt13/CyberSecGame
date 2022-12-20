@@ -9,6 +9,10 @@ public class GameManager : MonoBehaviour
 
     public GameObject gameOverUI;
 
+    public string nextLevel = "Level02";
+    public int levelCheckPoint = 2;
+    public SceneFade sceneFade;
+
     private void Start()
     {
         GameOver = false;
@@ -30,5 +34,12 @@ public class GameManager : MonoBehaviour
     {
         GameOver = true;
         gameOverUI.SetActive(true);
+    }
+
+    public void WinLevel()
+    {
+        Debug.Log("Won!");
+        PlayerPrefs.SetInt("levelCheckPoint", levelCheckPoint);
+        sceneFade.FadeTo(nextLevel);
     }
 }
