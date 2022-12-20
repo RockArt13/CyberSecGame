@@ -5,16 +5,9 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
 
-    public TMP_Text roundText;
-
     public SceneFade sceneFade;
 
     public string sceneName = "MainMenu";
-
-    private void OnEnable()
-    {
-        roundText.text = PlayerState.Rounds.ToString();
-    }
 
     public void Retry()
     {
